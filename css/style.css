@@ -1,0 +1,134 @@
+html{
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit; 
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: inline-block;
+}
+a{
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+.header{
+    background-color: rgba(13, 29, 97, 0.85);
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.header__photo img{
+    max-width: 300px;
+    overflow: hidden; 
+}
+.header__nav-list a{
+    color: #fff;
+    text-transform: uppercase;
+    transition: all .5s;
+    position: relative;
+    font-weight: 300;
+}
+.header__nav-list a:hover{
+    letter-spacing: 1.5px;
+    font-weight: 400;
+}
+.header__nav-list a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    background-color: #fff;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    transition: all .5s;
+}
+.header__nav-list a:hover::before{
+    width: 100%;
+}
+.header__nav-list li + li{
+    margin-left: 30px;
+}
+
+
+.content{
+    background-image: url(../images/60f2546ac4c34377c6422f4f9ba48ca7.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about-me{
+    padding: 50px 0;
+}
+h1{
+    font-weight: 40px;
+    margin: 0;
+    padding: 20px;
+}
+h2{
+    font-weight: 30px;
+}
+.title{
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+.content__background{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.info__list{
+    text-align: center;
+    color: #fff;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.info__list li{
+    display: block;
+    margin-bottom: 10px;
+}
+.info__list li span{
+    font-size: 23px;
+    font-weight: 700;
+}
+.knowledge{
+    padding-bottom: 50px;
+}
+
+
+.footer{
+    background-color: rgba(13, 29, 97, 0.85);
+    text-align: center;
+    padding: 40px;
+}
+.footer__links-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__links-list li+li{
+    margin-left: 30px;
+}
+.footer__links-list img{
+    max-width: 50px;
+    max-height: 50px;
+}
